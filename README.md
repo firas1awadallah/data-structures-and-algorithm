@@ -2,4 +2,4 @@
 
 |  Challenge Title |  Link |
 |------------------|-------|
-|  array-reverse   |[array-reverse](pyhon/array-reverse/README.md)|
+| python-array-reverse|[array-reverse](pyhon/array-reverse/README.md)|
