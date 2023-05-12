@@ -10,3 +10,4 @@ Mock Interviews
 ## Solution
 
 ## how run the project 
+python pyhon/Mock-Interviews/fibonacci.py
