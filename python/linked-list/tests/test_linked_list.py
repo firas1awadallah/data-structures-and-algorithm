@@ -116,11 +116,41 @@ def test_insert_after_last_node():
     assert my_list.head.next.next.value == 3
     assert my_list.head.next.next.next is None
 
+#############kthFromEnd#################
+def test_kthFromEnd_greater_than_length():
+    my_list = LinkedList()
+    my_list.insert(1)
+    my_list.insert(2)
+    my_list.insert(3)
+    assert my_list.kthFromEnd(4) == "Exception"
 
+def test_kthFromEnd_length_and_k_are_same():
+    my_list = LinkedList()
+    my_list.append(1)
+    my_list.append(2)
+    my_list.append(3)
+    assert my_list.kthFromEnd(3) == "Exception"
 
+def test_kthFromEnd_negative_k():
+    my_list = LinkedList()
+    my_list.append(1)
+    my_list.append(2)
+    my_list.append(3)
+    assert my_list.kthFromEnd(-2) == 3
 
+def test_kthFromEnd_size_1_list():
+    single_node_list = LinkedList()
+    single_node_list.append(1)
+    assert single_node_list.kthFromEnd(0) == 1
 
-
+def test_kthFromEnd_middle_node():
+    my_list = LinkedList()
+    my_list.append(1)
+    my_list.append(2)
+    my_list.append(3)
+    my_list.append(4)
+    assert my_list.kthFromEnd(2) == 2
+    
 
 
 

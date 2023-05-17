@@ -95,7 +95,29 @@ class LinkedList :
             current = current.next
         print('X')
 
-   
+    def kthFromEnd(self, k):
+        if self.head is None:
+            return "Linked list is empty."
+
+        first = self.head
+        second = self.head
+
+        count = 0
+        while count < k:
+            if second.next is None:
+                return "Exception"
+            second = second.next
+            count += 1
+# moves the second pointer k steps from ahead 
+# count to  track of the number of steps
+        while second.next:
+            first = first.next
+            second = second.next
+# move the first and second pointers 
+# second reaches the last node
+# first pointer ends up at the node that is k steps 
+        return first.value
+
 
 my_list = LinkedList()
 my_list.insert("c")
@@ -118,7 +140,12 @@ my_list.insert_after(2, 3)
 my_list.insert_after(5, 6)
 my_list.traverse()
 
-
-
+print(my_list.kthFromEnd(0))  
+print(my_list.kthFromEnd(1))  
+print(my_list.kthFromEnd(2))
+print(my_list.kthFromEnd(3))    
+print(my_list.kthFromEnd(9))  # return Exception
+print(my_list.kthFromEnd(-1)) # return last bode value 6
 
 # python python/linked-list/linked_list/linked_list.py
+# pytest
