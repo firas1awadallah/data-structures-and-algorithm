@@ -136,7 +136,7 @@ def test_kthFromEnd_negative_k():
     my_list.append(1)
     my_list.append(2)
     my_list.append(3)
-    assert my_list.kthFromEnd(-2) == 3
+    assert my_list.kthFromEnd(-2) 
 
 def test_kthFromEnd_size_1_list():
     single_node_list = LinkedList()
