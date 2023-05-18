@@ -96,6 +96,11 @@ class LinkedList :
         print('X')
 
     def kthFromEnd(self, k):
+        # for the case of  k =-1 handle it by raising an Exception  "Negative value not accepted ".
+
+        if k < 0 :
+            raise Exception("Negative value not accepted.")
+        
         if self.head is None:
             return "Linked list is empty."
 
