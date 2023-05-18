@@ -14,9 +14,9 @@
 * is_empty() : O(1)
 
 ## Solution
-==> python Stack/stack/stack.py
-==> pytest Stack/tests/test_stack.py
-==> python Queue/Queue/queue.py
-==> pytest Queue/tests/test_queue.py 
+1. ==> python Stack/stack/stack.py
+2. ==> pytest Stack/tests/test_stack.py
+3. ==> python Queue/Queue/queue.py
+4. ==> pytest Queue/tests/test_queue.py 
 
 ## auther : Almoutaz Abutaha , Firas Awadallah
