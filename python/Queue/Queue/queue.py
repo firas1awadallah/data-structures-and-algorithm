@@ -8,6 +8,12 @@ class Queue:
         self.front = front # first node in th queue
         self.back = back    # last node in queue
     def enqueue(self,value) :
+        """
+        Adds a new element to the back of the queue.
+
+        Args:
+            value: The value to be enqueued.
+        """
         node = Node(value)
         #check if queue is empty:
         if self.front == None:
@@ -18,6 +24,15 @@ class Queue:
             self.back = node
       
     def dequeue(self):
+        """
+        Removes and returns the front element from the queue.
+
+        Returns:
+            The value of the dequeued element.
+        
+        Raises:
+            Exception: If the queue is empty.
+        """
         if self.front == None:
             raise Exception('Empty Queue')
         else:
@@ -26,6 +41,15 @@ class Queue:
             return temp.value
         
     def peek(self):
+        """
+        Returns the value of the front element without removing it.
+
+        Returns:
+            The value of the front element.
+        
+        Raises:
+            Exception: If the queue is empty.
+        """
         if self.front == None:
             raise Exception('Empty Queue')
         
@@ -33,12 +57,24 @@ class Queue:
             return self.front.value
         
     def is_empty(self):
+        """
+        Checks if the queue is empty.
+
+        Returns:
+            True if the queue is empty, False otherwise.
+        """
         if self.front == None:
             return True
         else:
             return False
 
     def __str__(self):
+        """
+        Returns a string representation of the queue.
+
+        Returns:
+            A string representing the elements of the queue.
+        """
         current=self.front
         string=""
         while current:

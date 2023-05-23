@@ -8,3 +8,4 @@
 | Mock Interviews|[Mock Interviews](pyhon/Mock-Interviews/README.md)|
 | linked-list|[linked-list](python/linked-list/README.md)|
 | Stack & Queue|[Stack & Queue](python/Queue/README.md)|
+| linked-list-zip|[linked-list-zip](python/linked-list-zip/README.md)|
