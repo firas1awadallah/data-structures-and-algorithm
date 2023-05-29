@@ -8,4 +8,4 @@
 | Mock Interviews|[Mock Interviews](pyhon/Mock-Interviews/README.md)|
 | linked-list|[linked-list](python/linked-list/README.md)|
 | Stack & Queue|[Stack & Queue](python/Queue/README.md)|
-| stack-queue-pseudo|[python/stack-queue-pseudo](python/stack-queue-pseudo/README.md)|
+| Code Challenge:11|[stack-queue-pseudo](python/stack-queue-pseudo/README.md)|
