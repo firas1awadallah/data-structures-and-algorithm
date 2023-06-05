@@ -2,13 +2,13 @@
 
 |  Challenge Title |  Link |
 |------------------|-------|
-| python-array-reverse|[array-reverse](pyhon/array-reverse/README.md)|
-| array-insert-shift|[array-insert-shift](pyhon/array-insert-shift/README.md)|
-| array-binary-searcht|[array-binary-search](pyhon/array-binary-search/README.md)|
-| Mock Interviews|[Mock Interviews](pyhon/Mock-Interviews/README.md)|
-| linked-list|[linked-list](python/linked-list/README.md)|
-| Stack & Queue|[Stack & Queue](python/Queue/README.md)|
-| Code Challenge:08|[python/linked-list-zip](python/linked-list-zip/README.md)|
+| Code Challenge:01|[array-reverse](pyhon/array-reverse/README.md)|
+| Code Challenge:02|[array-insert-shift](pyhon/array-insert-shift/README.md)|
+| Code Challenge:03|[array-binary-search](pyhon/array-binary-search/README.md)|
+| Code Challenge:04|[Mock Interviews](pyhon/Mock-Interviews/README.md)|
+| Code Challenge:05|[linked-list](python/linked-list/README.md)|
+| Code Challenge:08|[Stack & Queue](python/Queue/README.md)|
+| Code Challenge:09|[python/linked-list-zip](python/linked-list-zip/README.md)|
 | Code Challenge:11|[stack-queue-pseudo](python/stack-queue-pseudo/README.md)|
 | Code Challenge:12|[stack-queue-animal-shelter](python/stack-queue-animal-shelter/README.md)|
-
+| Code Challenge:13|[(stack_queue_brackets)](python/stack-queue-brackets/README.md)|
