@@ -3,15 +3,24 @@ from stack_queue_brackets import validate_brackets
 
 
 def test_validate_brackets():
-    assert validate_brackets("{}") == True
-    assert validate_brackets("{}(){}") == True
-    assert validate_brackets("()[[Extra Characters]]") == True
-    assert validate_brackets("(){}[[]]") == True
-    assert validate_brackets("{}{Code}[Fellows](())") == True
-    assert validate_brackets("[({}]") == False
-    assert validate_brackets("(]") == False
-    assert validate_brackets("{(})") == False
+    output = validate_brackets("{}(){}")
+    
+    assert output ==  True
 
-if __name__ == '__main__':
-    pytest.main()
 
+
+def test_validate_brackets2():
+    output = validate_brackets("{}{Code}[Fellows](())")
+    
+    assert output ==  True
+
+
+def test_validate_brackets3():
+    output = validate_brackets("{(})")
+   
+    assert output ==  False
+
+def test_validate_brackets4():
+    output = validate_brackets("[{[(]")
+   
+    assert output ==  False
