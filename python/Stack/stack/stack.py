@@ -49,7 +49,28 @@ class stack:
             raise Exception("empty stack")
         else:
             return self.top.value
-        
+
+    def getMax(self):
+        stack1 = stack()
+        biggest = None
+        while self.top is not None:
+            if biggest is None or self.top.value > biggest:
+                biggest = self.top.value
+            stack1.push(self.pop())
+        while stack1.top :
+            self.push(stack1.pop())
+        print(self)
+        return biggest
+    
+
+    def __str__(self):
+        current= self.top
+        stack = ""
+        while current:
+            stack += f"{current.value} -> "
+            current = current.next
+        return stack + "None"
+
     def is_empty(self):
         """
         Checks if the stack is empty.
@@ -65,15 +86,17 @@ class stack:
     
 if __name__ == "__main__":
     s = stack()
-    s.push(1)
-    s.push(2)
-    s.push(3)
-    print(s.peek())
-    print(s.pop())
-    print(s.pop())
-    print(s.pop())
-    print(s.is_empty())
-        
+    s.push(111)
+    s.push(22)
+    s.push(6)
+    print(s)
+    # print(s.peek())
+    # print(s.pop())
+    # print(s.pop())
+    # print(s.pop())
+    # print(s.is_empty())
+    print(s.getMax())
+    
 
 
         # python Stack/stack/stack.py
