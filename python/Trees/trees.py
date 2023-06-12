@@ -146,6 +146,30 @@ class BinarySearchTree(Tree):
 
         return _search(self.root, value)
 
+
+    def get_max(self):
+        """
+        this function  Returns the maximum value of the given tree
+        """
+        node = self.root
+        def __max(node):
+            _max = 0
+            if  node.value > _max :
+                _max = node.value
+                if node.left :
+                    if node.left.value > _max :
+                        _max = node.left.value
+                        return __max(node.left)
+                if node.right :
+                    if node.right.value > _max :
+                        _max = node.right.value
+                        return __max(node.right)
+            return _max
+        return __max(node)
+            
+            
+            
+
 if __name__ == "__main__":
     bst = BinarySearchTree()
     bst.add(10)
@@ -154,6 +178,8 @@ if __name__ == "__main__":
     bst.add(15)
     bst.add(25)
     bst.add(0)
+    bst.add(35)
+    
     print("breadth")
     print(bst.breadth_first())
     print("pre_order")
@@ -166,3 +192,4 @@ if __name__ == "__main__":
     print("Contains 20:", bst.contains(20))
     print("Contains 30:", bst.contains(30))
  
+    print(bst.get_max())
