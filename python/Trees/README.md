@@ -2,7 +2,7 @@
 Trees
 
 ## Whiteboard Process
-* No Whiteboard
+![MaxTree](./MaxTree.PNG)
 ## auther : Almoutaz Abutaha , Firas Awadallah
 
 ## Approach & Efficiency

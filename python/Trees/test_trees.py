@@ -49,3 +49,8 @@ def test_contains_existing_value(populated_tree):
 
 def test_contains_non_existing_value(populated_tree):
     assert populated_tree.contains(100) is False
+
+
+def test_get_max_value(populated_tree):
+    expected_output = 17
+    assert populated_tree.get_max() == expected_output
