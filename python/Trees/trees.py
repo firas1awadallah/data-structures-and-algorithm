@@ -149,23 +149,27 @@ class BinarySearchTree(Tree):
 
     def get_max(self):
         """
-        this function  Returns the maximum value of the given tree
+        Returns the maximum value of the given tree
         """
-        node = self.root
         def __max(node):
-            _max = 0
-            if  node.value > _max :
-                _max = node.value
-                if node.left :
-                    if node.left.value > _max :
-                        _max = node.left.value
-                        return __max(node.left)
-                if node.right :
-                    if node.right.value > _max :
-                        _max = node.right.value
-                        return __max(node.right)
+            if node is None:
+                return None  # Return None for empty nodes
+
+            _max = node.value
+
+            left_max = __max(node.left)
+            if left_max is not None and left_max > _max:
+                _max = left_max
+
+            right_max = __max(node.right)
+            if right_max is not None and right_max > _max:
+                _max = right_max
+
             return _max
-        return __max(node)
+
+        return __max(self.root)
+
+
             
             
             
@@ -173,6 +177,7 @@ class BinarySearchTree(Tree):
 if __name__ == "__main__":
     bst = BinarySearchTree()
     bst.add(10)
+    bst.add(30)
     bst.add(20)
     bst.add(5)
     bst.add(15)
@@ -188,8 +193,6 @@ if __name__ == "__main__":
     print(bst.in_order())
     print("post_order")
     print(bst.post_order())
-
     print("Contains 20:", bst.contains(20))
-    print("Contains 30:", bst.contains(30))
- 
+    print("Contains 40:", bst.contains(40))
     print(bst.get_max())

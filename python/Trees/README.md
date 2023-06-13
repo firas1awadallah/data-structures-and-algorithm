@@ -2,10 +2,11 @@
 Trees
 
 ## Whiteboard Process
-![MaxTree](./MaxTree.PNG)
-## auther : Almoutaz Abutaha , Firas Awadallah
+![MaxTree](./maxTree1.PNG)
+
 
 ## Approach & Efficiency
+
 ### Add:
 * Time complexity: O(log n)
 * Space complexity: O(1)
@@ -13,6 +14,10 @@ Trees
 ### Contains :
 * Time complexity: O(log n) 
 * Space Complexity: O(1)
+
+### MaxTree :
+* Time complexity: O(n) 
+* Space Complexity: O(n)
 
 ## Solution
 * python python/Trees/trees.py
