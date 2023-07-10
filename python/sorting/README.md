@@ -24,8 +24,9 @@ InsertionSort(int[] input)
 
 ----------------------------------------------------------------
 
-##  visual step through
+##  Trace
 
+### Sample Array:
 [8, 4, 23, 42, 16, 15]
 
 1. Initial state:
@@ -76,3 +77,11 @@ InsertionSort(int[] input)
    - sorted = [4, 8, 15, 16, 23, 42]
 
 7. Final sorted array: [4, 8, 15, 16, 23, 42]
+
+## Efficency
+### Time: 
+* The Insert function has a time complexity of O(n) 
+* The InsertionSort function has a time complexity of O(n^2)
+### Space:
+* The Insert function has a space complexity of O(1)
+* The InsertionSort function has a space complexity of O(n)
