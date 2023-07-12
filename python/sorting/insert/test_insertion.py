@@ -1,5 +1,5 @@
 import pytest
-from sorting.insertion import InsertionSort
+from insertion import InsertionSort
 
 
 def test_insertion_sort():
