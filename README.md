@@ -13,3 +13,4 @@
 | Code Challenge:12|[stack-queue-animal-shelter](python/stack-queue-animal-shelter/README.md)|
 | Code Challenge:13|[stack_queue_brackets](python/stack-queue-brackets/README.md)|
 | Code Challenge:16|[Tree](python/Trees/README.md)|
+| Code Challenge:28|[comparisons](python/sorting/comparisons/README.md)|
