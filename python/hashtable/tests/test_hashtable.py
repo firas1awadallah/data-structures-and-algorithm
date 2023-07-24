@@ -1,5 +1,5 @@
 import pytest
-from hash_tables import HashTable
+from python.hashtable.hashtable import HashTable
 
 @pytest.fixture
 def hashtable():
