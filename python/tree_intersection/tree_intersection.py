@@ -119,6 +119,19 @@ class Binary_Search_Tree(Tree):
 
 
 def tree_intersection(t1, t2):
+    """
+    Find the common values that exist in both binary trees t1 and t2.
+
+    This function performs an intersection of values between two binary trees,
+    t1 and t2, and returns a list of values that are present in both trees.
+
+    Parameters:
+        t1 (Binary_Search_Tree): The root node of the first binary tree.
+        t2 (Binary_Search_Tree): The root node of the second binary tree.
+
+    Returns:
+        list: A list of common values found in both t1 and t2. The list may be empty if no common values are found.
+    """
     hasht = HashTable()
     common_values = []
 
@@ -140,11 +153,6 @@ def tree_intersection(t1, t2):
     _walk_t2(t2.root)
 
     return common_values
-
-
-
-
-
 
 
 if __name__ == "__main__":
