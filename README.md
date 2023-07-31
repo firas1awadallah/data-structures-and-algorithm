@@ -14,3 +14,6 @@
 | Code Challenge:13|[stack_queue_brackets](python/stack-queue-brackets/README.md)|
 | Code Challenge:16|[Tree](python/Trees/README.md)|
 | Code Challenge:28|[comparisons](python/sorting/comparisons/README.md)|
+| Code Challenge:31|[hashtable](python/hashtable/README.md)|
+| Code Challenge:32|[tree_intersection](python/tree_intersection/README.md)|
+| Code Challenge:33|[left-join](python/hashmap-left-join/README.md)|
