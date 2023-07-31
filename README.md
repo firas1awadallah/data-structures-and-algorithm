@@ -16,3 +16,4 @@
 | Code Challenge:28|[comparisons](python/sorting/comparisons/README.md)|
 | Code Challenge:31|[hashtable](python/hashtable/README.md)|
 | Code Challenge:32|[tree_intersection](python/tree_intersection/README.md)|
+| Code Challenge:33|[left-join](python/hashmap-left-join/README.md)|
