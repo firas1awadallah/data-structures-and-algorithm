@@ -1,19 +1,6 @@
-'''
-- implement the graph with all methods needed.
-- vertex  *
-- Edge  *
-- graph *
-methods : 
-  - add_vertex() * 
-  - add_edge() *
-  - get_verteces() *
-  - get_neighbors() *
-  - size () *
-- breadth first traversal . 
-  - Queue() *
-'''
+
 from collections import deque 
-# we spill it 'd-e-c-k'
+
 
 class Queue:
 
@@ -64,18 +51,7 @@ class Graph:
       return vertix
 
   
-    # def add_edge(self,start_vertix,end_vertix,weight=0):
-  
-      # edge1 = Edge(end_vertix)
-      # edge2=Edge(start_vertix)
-      # if start_vertix not in self.__adj_list:
-      #   raise KeyError(" vertix not exist ")
-      # if end_vertix not in self.__adj_list:
-      #   raise KeyError(" vertix not exist ")  
-  
-      
-      # self.__adj_list[start_vertix].append(edge1)
-      # self.__adj_list[end_vertix].append(edge2)
+
 
     def add_edge(self, start_vertix, end_vertix, weight=0):
         '''
@@ -111,15 +87,7 @@ class Graph:
       return len(self.__adj_list)
   
     def get_neighbors(self,vertix):
-      '''
-      get neighbors
-      A rguments: vertex
-      Returns a collection of edges connected to the 
-      given vertex
-      Include the weight of the connection in the                      returned collection
-      Empty collection returned if there are no vertices
-      '''
-      # return self.__adj_list[vertix]
+    
       return self.__adj_list.get(vertix, [])
   
     def breadth_first(self,start_vertix):
@@ -145,6 +113,14 @@ class Graph:
                     visted.add(neighbor)
 
         return result
+
+
+    def business_trip(graph, cities):
+        if not isinstance(graph, Graph):
+            raise ValueError("Error graph")
+    
+        if len(cities) < 2:
+            raise ValueError("Error cities")
         
     
     
