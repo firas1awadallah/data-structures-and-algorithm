@@ -115,12 +115,7 @@ class Graph:
         return result
 
 
-    def business_trip(graph, cities):
-        if not isinstance(graph, Graph):
-            raise ValueError("Error graph")
-    
-        if len(cities) < 2:
-            raise ValueError("Error cities")
+
         
     
     
